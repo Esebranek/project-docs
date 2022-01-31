@@ -1,6 +1,6 @@
 # DIY Controller Area Network
 
-![DIY CAN](header.jpeg)
+![DIY CAN](https://raw.githubusercontent.com/Esebranek/project-docs/main/diy-can/header.jpeg)
 
 > This project was originally published to Medium, but I have decided to re-host it on my own website for improved accessibility.
 
@@ -34,7 +34,7 @@ Each message sent within a CAN will contain an ID and data. The ID belongs to th
 
 My configuration contains 6 nodes, with each node containing an Arduino and a CAN Bus module. I already had one Arduino UNO lying around so I commissioned it to be the read node since it can be easily distinguished and expanded upon in the future. For the other 5 nodes, I purchased a pack of Arduino Nano V3 boards. They use the ATMEGA328P and have more than enough digital pins, as well as the necessary VIN, 5V and GND. Plus I was able to get a pack of 10 for about $3.50 each. Each node also has a MCP2515 CAN Bus Arduino module which were about $3 a piece when I purchased them. In addition to the microcontrollers and CAN modules, I also picked up a 12V 2.5a DC Adapter to power the 5 sender nodes. All of these components were available from several sources on Amazon at the time.
 
-![CAN Module](can_module.jpeg) ![Arduino Nano](arduino_nano.jpeg) ![Arduino UNO](arduino_uno.jpeg)
+![CAN Module](https://raw.githubusercontent.com/Esebranek/project-docs/main/diy-can/can_module.jpeg) ![Arduino Nano](https://raw.githubusercontent.com/Esebranek/project-docs/main/diy-can/arduino_nano.jpeg) ![Arduino UNO](https://raw.githubusercontent.com/Esebranek/project-docs/main/diy-can/arduino_uno.jpeg)
 
 ## Physical Set-up
 
@@ -130,7 +130,7 @@ void loop()
 
 Next the code was uploaded to each Arduino and the network was powered on. Using the Arduino IDE serial monitor I was able to capture the serial output of the read node. The random send interval allowed data from all 5 write nodes to get through without being blocked by a higher priority node. Success!
 
-![Results](results.png)
+![Results](https://raw.githubusercontent.com/Esebranek/project-docs/main/diy-can/results.png)
 
 ## Next Steps
 
